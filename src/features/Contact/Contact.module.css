@@ -1,0 +1,43 @@
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 44rem) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.block h3 {
+  margin: 0 0 0.6rem;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--color-muted);
+  line-height: 1.85;
+}
+
+.map {
+  min-height: 14rem;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  background:
+    linear-gradient(160deg, #d9c4a8 0%, #c4a07a 45%, #8c5a3a 100%);
+  color: var(--color-night);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.map strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  margin-bottom: 0.35rem;
+}
