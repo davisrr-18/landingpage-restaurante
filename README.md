@@ -4,7 +4,7 @@ Landing page de um restaurante fictício de cozinha contemporânea brasileira, f
 
 ## Demonstração
 
-- **Live demo:** _em breve — adicione aqui o link do deploy (Vercel, Netlify ou GitHub Pages)_
+- **Live demo:** [davisrr-18.github.io/restaurante-ficticio](https://davisrr-18.github.io/restaurante-ficticio/)
 
 | Desktop | Mobile |
 |---|---|
@@ -112,6 +112,10 @@ Build de produção:
 npm run build
 npm run preview
 ```
+
+## Deploy
+
+Cada push na branch `main` dispara o workflow `.github/workflows/deploy.yml`, que faz o build e publica a pasta `dist/` no GitHub Pages. O caminho base do site (`/restaurante-ficticio/`) é definido em `vite.config.js` e só se aplica ao build.
 
 ## Créditos
 
