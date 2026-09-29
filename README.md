@@ -4,11 +4,9 @@ Landing page de um restaurante fictício de cozinha contemporânea brasileira, f
 
 ## Demonstração
 
-- **Live demo:** [davisrr-18.github.io/restaurante-ficticio](https://davisrr-18.github.io/restaurante-ficticio/)
+**Acesse o site:** [davisrr-18.github.io/restaurante-ficticio](https://davisrr-18.github.io/restaurante-ficticio/)
 
-| Desktop | Mobile |
-|---|---|
-| _adicione `docs/desktop.png`_ | _adicione `docs/mobile.png`_ |
+![Abertura da landing page do Restaurante Fictício no desktop](docs/desktop.png)
 
 ## Stack
 
@@ -59,7 +57,12 @@ Cabeçalho fixo com menu mobile, abertura com chamada para reserva, sobre a casa
 
 ```
 .
+├── .github/workflows/
+│   └── deploy.yml
+├── docs/
+│   └── desktop.png
 ├── index.html
+├── vite.config.js
 ├── public/
 │   ├── favicon.svg
 │   └── images/
@@ -113,10 +116,18 @@ npm run build
 npm run preview
 ```
 
+O preview abre em `http://localhost:4173/restaurante-ficticio/`, o mesmo caminho usado no GitHub Pages.
+
 ## Deploy
 
-Cada push na branch `main` dispara o workflow `.github/workflows/deploy.yml`, que faz o build e publica a pasta `dist/` no GitHub Pages. O caminho base do site (`/restaurante-ficticio/`) é definido em `vite.config.js` e só se aplica ao build.
+Cada push na branch `main` dispara o workflow `.github/workflows/deploy.yml`, que faz o build e publica a pasta `dist/` no GitHub Pages.
+
+O caminho base do site (`/restaurante-ficticio/`) é definido em `vite.config.js` e vale para o build e o preview; o `npm run dev` continua na raiz. Se o repositório for renomeado, esse caminho precisa ser atualizado, senão o site publicado abre em branco.
 
 ## Créditos
 
 Fotos do [Unsplash](https://unsplash.com), carregadas por link externo. Fontes Cormorant Garamond e Outfit, do [Google Fonts](https://fonts.google.com).
+
+## Autor
+
+**Davi Silva Rocha** — [github.com/davisrr-18](https://github.com/davisrr-18)
