@@ -1,4 +1,4 @@
-# Restaurante Fictício
+# Landing Page de restaurante
 
 Landing page de um restaurante fictício de cozinha contemporânea brasileira, feita com **React**, **HTML semântico** e **CSS Modules**. É um projeto de portfólio: o restaurante, o cardápio e as reservas não existem de verdade.
 
