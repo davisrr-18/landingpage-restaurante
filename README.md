@@ -4,7 +4,7 @@ Landing page de um restaurante fictício de cozinha contemporânea brasileira, f
 
 ## Demonstração
 
-**Acesse o site:** [davisrr-18.github.io/restaurante-ficticio](https://davisrr-18.github.io/restaurante-ficticio/)
+**Acesse o site:** [davisrr-18.github.io/landingpage-restaurante](https://davisrr-18.github.io/landingpage-restaurante/)
 
 ![Abertura da landing page do Restaurante Fictício no desktop](docs/desktop.png)
 
@@ -116,13 +116,13 @@ npm run build
 npm run preview
 ```
 
-O preview abre em `http://localhost:4173/restaurante-ficticio/`, o mesmo caminho usado no GitHub Pages.
+O preview abre em `http://localhost:4173/landingpage-restaurante/`, o mesmo caminho usado no GitHub Pages.
 
 ## Deploy
 
 Cada push na branch `main` dispara o workflow `.github/workflows/deploy.yml`, que faz o build e publica a pasta `dist/` no GitHub Pages.
 
-O caminho base do site (`/restaurante-ficticio/`) é definido em `vite.config.js` e vale para o build e o preview; o `npm run dev` continua na raiz. Se o repositório for renomeado, esse caminho precisa ser atualizado, senão o site publicado abre em branco.
+No GitHub Pages o site é servido em `/<nome-do-repositório>/`. O workflow passa esse caminho ao build pela variável `VITE_BASE_PATH`, então renomear o repositório não quebra o site publicado. Localmente, o build e o preview usam `/landingpage-restaurante/` como padrão e o `npm run dev` continua na raiz.
 
 ## Créditos
 
